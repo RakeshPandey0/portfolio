@@ -1,4 +1,6 @@
 import React from "react";
+import Email from "../ui/Email";
+import Mobile from "../ui/Mobile";
 export default function page() {
   return (
     <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 to-gray-100 px-4">
@@ -42,10 +44,10 @@ export default function page() {
         </div>
         <div className="flex justify-center gap-6 m-2 p-2">
           <div>
-            <button className="text-gray-600">rp901522@gmail.com</button>
+            <Email email={"rp901522@gmail.com"} />
           </div>
           <div>
-            <button className="text-gray-600">+977-9864315562</button>
+            <Mobile phone={"+977-9864315562"} />
           </div>
         </div>
       </div>
