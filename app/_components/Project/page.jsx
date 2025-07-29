@@ -1,31 +1,24 @@
 import React from "react";
 // import ProjectCard from "./ProjectCard";
-import {
-  Shield,
-  Utensils,
-  Brain,
-  Link,
-  FileText,
-  Link2Icon,
-} from "lucide-react";
+import { Utensils, Brain, Link, FileText, Link2Icon, Book } from "lucide-react";
 import TechnologyBadge from "../ui/TechnologyBadge";
 import GitIcon from "../ui/GitIcon";
 
 const page = () => {
   const projects = [
     {
-      title: "SurakshitWeb",
+      title: "Minechant",
       description:
-        "AI-powered phishing URL detection system using deep learning and genetic algorithms. Achieved 96.12% accuracy on 450,000+ URLs dataset.",
-      icon: Shield,
-      technologies: ["Python", "TensorFlow", "NumPy", "Genetic Algorithm"],
+        "A web application that calculates the optimal enchantment order for Minecraft items.",
+      icon: Book,
+      technologies: ["Next,js", "Redux Toolkit", "GROQ", "TailwindCSS"],
       highlights: [
-        "96.12% accuracy",
-        "450K+ URLs processed",
-        "Custom neural network",
+        "Item based enchantment selection.",
+        "Item, enchantment and enchantment order state stored using Redux.",
+        "Responsive UI and seamless user interaction.",
       ],
-      github: "#",
-      demo: "#",
+      github: "https://github.com/RakeshPandey0/Minechant",
+      demo: "https://minechant.vercel.app",
     },
     {
       title: "Quick-Dine",
@@ -35,17 +28,7 @@ const page = () => {
       technologies: ["Next.js", "MongoDB", "Tailwind CSS", "Git"],
       highlights: ["QR-based ordering", "Real-time updates", "Secure backend"],
       github: "https://github.com/RakeshPandey0/QuickDine",
-      demo: "#",
-    },
-    {
-      title: "Crop Recommendation System",
-      description:
-        "Machine learning model for agriculture recommendations based on soil properties (N, P, K, pH). Uses ensemble methods for higher accuracy.",
-      icon: Brain,
-      technologies: ["Python", "scikit-learn", "Pandas", "Ensemble Methods"],
-      highlights: ["Ensemble learning", "Soil analysis", "Agriculture focus"],
-      github: "#",
-      demo: "#",
+      demo: "https://quickdine.vercel.app/",
     },
     {
       title: "SnapLink",
@@ -55,7 +38,7 @@ const page = () => {
       technologies: ["Node.js", "Express", "MongoDB", "JWT"],
       highlights: ["JWT authentication", "URL mapping", "Dynamic rendering"],
       github: "https://github.com/RakeshPandey0/SnapLink",
-      demo: "#",
+      demo: "https://snaplink-mj5h.onrender.com/",
     },
     {
       title: "Postly",
@@ -65,7 +48,7 @@ const page = () => {
       technologies: ["Node.js", "Express", "MongoDB", "EJS"],
       highlights: ["Server-side rendering", "Image upload", "Blog management"],
       github: "https://github.com/RakeshPandey0/Postly",
-      demo: "#",
+      demo: "https://postly-qgtq.onrender.com/",
     },
   ];
 
@@ -141,15 +124,23 @@ const page = () => {
                 <div className="flex gap-4 items-center p-2">
                   {/* Code */}
                   <button className="gap-2 rounded-lg bg-white px-2 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-neutral-600 shadow-black-3 border-1 border-gray-300 transition duration-150 ease-in-out hover:bg-neutral-200 hover:shadow-light-2 active:border-neutral-800">
-                    <a href={project.github} target="_blank" className="flex gap-2">
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      className="flex gap-2"
+                    >
                       <GitIcon />
                       <p className="text-md text-black font-bold">Code</p>
                     </a>
                   </button>
                   {/* Demo */}
                   <button className="gap-2 rounded-lg bg-white px-2 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-neutral-600 shadow-black-3 border-1 border-gray-300 transition duration-150 ease-in-out hover:bg-neutral-200 hover:shadow-light-2 active:border-neutral-800">
-                    <a href={project.demo} target="_blank" className="flex gap-2">
-                      <Link2Icon size={15} color="black"/>
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      className="flex gap-2"
+                    >
+                      <Link2Icon size={15} color="black" />
                       <p className="text-md text-black font-bold">Demo</p>
                     </a>
                   </button>
