@@ -38,10 +38,10 @@ const page = () => {
           I'm a passionate Computer Engineering graduate with hands-on
           experience in full-stack web development and machine learning. I love
           building innovative solutions that make a real impact, from restaurant
-          management systems to AI-powered security tools.
+          management systems to AI-powered tools.
         </p>
       </div>
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-2">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-2 mx-50 p-5">
         {highlights.map((highlight, index) => {
           return (
             <div key={index} className="rounded-lg flex flex-col items-center text-center bg-white p-7 m-2 shadow-md hover:shadow-xl transition duration-250">
