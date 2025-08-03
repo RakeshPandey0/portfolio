@@ -29,12 +29,24 @@ export default function page() {
           <button className="inline-block rounded-lg bg-white px-2 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-neutral-600 shadow-black-3 border-1 border-gray-300 transition duration-150 ease-in-out hover:bg-neutral-200 hover:shadow-light-2 active:border-neutral-800">
             View Projects
           </button>
-          <button className="inline-block rounded-lg bg-white px-2 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-neutral-600 shadow-black-3 border-1 border-gray-300 transition duration-150 ease-in-out hover:bg-neutral-200 hover:shadow-light-2 active:border-neutral-800">
+          <a
+            href="https://github.com/RakeshPandey0"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+            className="inline-block rounded-lg bg-white px-2 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-neutral-600 shadow-black-3 border border-gray-300 transition duration-150 ease-in-out hover:bg-neutral-200 hover:shadow-light-2 active:border-neutral-800"
+          >
             <GitIcon />
-          </button>
-          <button className="inline-block rounded-lg bg-white px-2 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-neutral-600 shadow-black-3 border-1 border-gray-300 transition duration-150 ease-in-out hover:bg-neutral-200 hover:shadow-light-2 active:border-neutral-800">
+          </a>
+          <a
+            href="https://linkedin.com/in/rakeshpandey0"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            className="inline-block rounded-lg bg-white px-2 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-neutral-600 shadow-black-3 border border-gray-300 transition duration-150 ease-in-out hover:bg-neutral-200 hover:shadow-light-2 active:border-neutral-800"
+          >
             <LinkedinIcon />
-          </button>
+          </a>
         </div>
         <div className="flex justify-center gap-5 m-2 p-1">
           <div>
