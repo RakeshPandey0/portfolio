@@ -1,6 +1,6 @@
 import React from "react";
 // import ProjectCard from "./ProjectCard";
-import { Utensils, Brain, Link, FileText, Link2Icon, Book } from "lucide-react";
+import { Utensils, Link, FileText, Link2Icon, Book } from "lucide-react";
 import TechnologyBadge from "../ui/TechnologyBadge";
 import GitIcon from "../ui/GitIcon";
 
