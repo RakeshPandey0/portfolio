@@ -54,7 +54,7 @@ const page = () => {
 
   return (
     <section
-      id="about"
+      id="project"
       className="py-20 px-4 bg-gradient-to-br from-slate-50 to-gray-100"
     >
       <div className="max-w-max px-20 mx-18">
