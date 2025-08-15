@@ -4,8 +4,8 @@ import Review from "./Review";
 const page = () => {
   return (
     <section
-      id="education-expreience"
-      className="p-20 bg-gradient-to-br from-slate-50 to-gray-100"
+      id="publication-reviews"
+      className="p-20 bg-white"
     >
       <div className="max-w-max px-30 mx-20">
         <div
