@@ -13,7 +13,7 @@ const Review = () => {
   ];
   return (
     <div id="review" className="flex flex-col">
-      <h2 className="px-6 text-2xl font-bold mb-2">Research Publications</h2>
+      <h2 className="px-6 text-2xl font-bold mb-2">Peer Review Activities</h2>
       {reviews.map((review, index) => {
         return (
           <div
