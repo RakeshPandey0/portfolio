@@ -3,17 +3,17 @@ import Education from "./Education";
 import Achievement from "./Achievement";
 import Community from "./Community";
 const page = () => {
-
   return (
     <section
       id="education-expreience"
-      className="p-20 bg-gradient-to-br from-slate-50 to-gray-100"
+      // Adjusted padding for better responsiveness
+      className="py-16 px-4 bg-gradient-to-br from-slate-50 to-gray-100"
     >
-
-      <div className="max-w-max px-30 mx-20">
+      {/* Replaced invalid classes with a standard responsive container */}
+      <div className="w-full max-w-7xl mx-auto">
         <div
           id="header"
-          className="flex flex-col justify-center items-center text-center"
+          className="flex flex-col justify-center items-center text-center mb-12"
         >
           <h2 className="text-4xl font-bold text-gray-900">
             Education & Experience
@@ -23,10 +23,11 @@ const page = () => {
             shaped my technical expertise.
           </p>
         </div>
-        <div className="flex flex-row justify-center gap-6 mt-10">
-        <Education />
-        <Achievement />
-        <Community />
+        {/* Main responsive grid layout for the three components */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+          <Education />
+          <Achievement />
+          <Community />
         </div>
       </div>
     </section>

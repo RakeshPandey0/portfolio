@@ -1,11 +1,16 @@
 import React from "react";
 import { Phone } from "lucide-react";
+
 const Mobile = ({ phone }) => {
   return (
-    <div className="cursor-text flex text-gray-500 hover:text-slate-700">
-      <Phone className="mt-1 mr-2 size-4" />
-      {phone}
-    </div>
+    <a
+      href={`tel:${phone}`}
+      className="inline-flex items-center gap-2 px-3 py-2 bg-white rounded-md border border-gray-300 shadow-sm text-gray-700 hover:bg-gray-100 transition duration-200"
+      aria-label={`Call ${phone}`}
+    >
+      <Phone className="size-4 flex-shrink-0" />
+      <span className="text-sm font-medium">{phone}</span>
+    </a>
   );
 };
 

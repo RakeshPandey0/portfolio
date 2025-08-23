@@ -21,12 +21,13 @@ export default function page() {
             that solve real-world problems.
           </p>
         </div>
-        <div className="flex justify-center gap-4 items-center m-1 p-2">
+        {/* Buttons and Icons - Now responsive with flex-wrap */}
+        <div className="flex flex-wrap justify-center gap-4 m-1 p-2">
           <button className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-600 text-white text-sm font-semibold rounded-md hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 shadow-sm transition duration-200">
             Get In Touch
           </button>
 
-          <button className="inline-block rounded-lg bg-white px-2 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-neutral-600 shadow-black-3 border-1 border-gray-300 transition duration-150 ease-in-out hover:bg-neutral-200 hover:shadow-light-2 active:border-neutral-800">
+          <button className="inline-block rounded-lg bg-white px-4 py-2 text-sm font-medium uppercase leading-normal text-gray-600 border border-gray-300 transition duration-150 ease-in-out hover:bg-gray-100 shadow-sm">
             View Projects
           </button>
           <a
@@ -34,7 +35,7 @@ export default function page() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
-            className="inline-block rounded-lg bg-white px-2 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-neutral-600 shadow-black-3 border border-gray-300 transition duration-150 ease-in-out hover:bg-neutral-200 hover:shadow-light-2 active:border-neutral-800"
+            className="inline-block rounded-lg bg-white px-3 py-2 text-xs font-medium uppercase leading-normal text-gray-600 border border-gray-300 transition duration-150 ease-in-out hover:bg-gray-100 shadow-sm"
           >
             <GitIcon />
           </a>
@@ -43,12 +44,13 @@ export default function page() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
-            className="inline-block rounded-lg bg-white px-2 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-neutral-600 shadow-black-3 border border-gray-300 transition duration-150 ease-in-out hover:bg-neutral-200 hover:shadow-light-2 active:border-neutral-800"
+            className="inline-block rounded-lg bg-white px-3 py-2 text-xs font-medium uppercase leading-normal text-gray-600 border border-gray-300 transition duration-150 ease-in-out hover:bg-gray-100 shadow-sm"
           >
             <LinkedinIcon />
           </a>
         </div>
-        <div className="flex justify-center gap-5 m-2 p-1">
+        {/* Contact Info - Now responsive with sm:flex-row */}
+        <div className="flex flex-col sm:flex-row justify-center gap-5 m-2 p-1">
           <div>
             <Email email={"rp901522@gmail.com"} />
           </div>

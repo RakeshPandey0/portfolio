@@ -5,9 +5,11 @@ const page = () => {
   return (
     <section
       id="publication-reviews"
-      className="p-20 bg-white"
+      // Adjusted padding for better responsiveness
+      className="py-16 px-4 bg-white"
     >
-      <div className="max-w-max px-30 mx-20">
+      {/* Replaced invalid classes with a standard responsive container */}
+      <div className="w-full max-w-7xl mx-auto">
         <div
           id="header"
           className="flex flex-col justify-center items-center text-center"
@@ -20,7 +22,8 @@ const page = () => {
             learning, web security, and agricultural technology.
           </p>
         </div>
-        <div className="flex flex-row justify-center px-6 -mx-6 mt-10">
+        {/* Main responsive container for Publication and Review components */}
+        <div className="flex flex-col md:flex-row justify-center gap-8 mt-10">
           <Publication />
           <Review />
         </div>

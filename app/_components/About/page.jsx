@@ -14,7 +14,7 @@ const page = () => {
           management systems to AI-powered tools.
         </p>
       </div>
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-2 mx-50 p-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 mx-auto max-w-6xl p-5">
         {highlights.map((highlight, index) => {
           return (
             <div
