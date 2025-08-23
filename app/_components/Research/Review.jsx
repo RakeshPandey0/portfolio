@@ -1,16 +1,9 @@
 import React from "react";
-import { LucideEye} from "lucide-react";
+import { LucideEye } from "lucide-react";
 import TechnologyBadge from "../ui/TechnologyBadge";
+import { reviews } from "@/app/assets/reviews";
+
 const Review = () => {
-  const reviews = [
-    {
-      title: "International Research Journal of Multidisciplinary Technovation",
-      role: "Peer Reviewer",
-      year: "2024",
-      description:
-        "Reviewed research papers in the field of technology and innovation.",
-    },
-  ];
   return (
     <div id="review" className="flex flex-col">
       <h2 className="px-6 text-2xl font-bold mb-2">Peer Review Activities</h2>

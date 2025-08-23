@@ -1,29 +1,8 @@
 import React from "react";
 import { Users } from "lucide-react";
+import { involvement } from "@/app/assets/involvement";
+
 const Community = () => {
-  const involvement = [
-    {
-      title: "CFC (Code For Change) Kathmandu",
-      role: "Member",
-      period: "23.24 tenure",
-      description:
-        "Collaborated on community tech projects focused on social impact",
-    },
-    {
-      title: "KEC Computer Club",
-      role: "Wing Member",
-      period: "College tenure",
-      description:
-        "Organized events, workshops, and mentored in technical training sessions",
-    },
-    {
-      title: "Notion at KEC",
-      role: "Community Member",
-      period: "College tenure",
-      description:
-        "Promoted efficient knowledge management and collaboration using Notion",
-    },
-  ];
   return (
     <div id="community" className="flex flex-col mr-5">
       <h2 className="px-6 text-2xl font-bold mb-2">Community</h2>
@@ -42,11 +21,11 @@ const Community = () => {
                 <h3 className=" text-xl font-semibold mt-2">{club.title}</h3>
                 <div className="flex items-center content-centerx">
                   <p className="text-md font-black text-purple-700 leading-relaxed">
-                  {club.role}
-                </p>
-                <p className="text-xs text-gray-700 leading-relaxed ml-5 mt-0.5 font-black">
-                  {club.period}
-                </p>
+                    {club.role}
+                  </p>
+                  <p className="text-xs text-gray-700 leading-relaxed ml-5 mt-0.5 font-black">
+                    {club.period}
+                  </p>
                 </div>
                 <p className="text-sm text-gray-700 leading-relaxed">
                   {club.description}
