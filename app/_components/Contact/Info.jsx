@@ -4,7 +4,7 @@ const Info = () => {
   return (
     <div
       id="information"
-      className="flex flex-col justify-start gap-6 p-8 bg-white rounded-xl shadow-md max-w-lg mx-auto md:mx-0"
+      className="flex flex-col justify-start gap-6 p-12 bg-white rounded-xl shadow-md max-w-lg mx-8 md:mx-0"
     >
       <h2 className="text-2xl font-bold text-gray-800">Contact Information</h2>
 
