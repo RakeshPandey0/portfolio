@@ -4,7 +4,6 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Email from "../ui/Email";
-import Mobile from "../ui/Mobile";
 import GitIcon from "../ui/GitIcon";
 import LinkedinIcon from "../ui/LinkedinIcon";
 import profileImage from "@/public/profile-image.png";
@@ -22,14 +21,14 @@ export default function page() {
           <Image
             src={profileImage}
             alt="Rakesh Pandey"
-            width={400} 
-            height={400} 
-            className="rounded-full shadow-lg filter saturate-100 brightness-105 contrast-95 opacity-100" 
+            width={400}
+            height={400}
+            className="rounded-full shadow-lg filter saturate-100 brightness-105 contrast-95 opacity-100"
             priority={true}
           />
           <div className="absolute inset-0 bg-white opacity-10 rounded-full mix-blend-overlay"></div>
         </motion.div>
-        
+
         <div className="text-center lg:text-left max-w-2xl">
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900">
             Rakesh Pandey
@@ -43,12 +42,18 @@ export default function page() {
             that solve real-world problems.
           </p>
           <div className="flex flex-wrap justify-center lg:justify-start gap-4 m-1 p-2">
-            <button className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-600 text-white text-sm font-semibold rounded-md hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 shadow-sm transition duration-200">
+            <a
+              href="#contact"
+              className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-600 text-white text-sm font-semibold rounded-md hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 shadow-sm transition duration-200"
+            >
               Get In Touch
-            </button>
-            <button className="inline-block rounded-lg bg-white px-4 py-2 text-sm font-medium uppercase leading-normal text-gray-600 border border-gray-300 transition duration-150 ease-in-out hover:bg-gray-100 shadow-sm">
+            </a>
+            <a
+              href="#project"
+              className="inline-block rounded-lg bg-white px-4 py-2 text-sm font-medium uppercase leading-normal text-gray-600 border border-gray-300 transition duration-150 ease-in-out hover:bg-gray-100 shadow-sm"
+            >
               View Projects
-            </button>
+            </a>
             <a
               href="https://github.com/RakeshPandey0"
               target="_blank"
@@ -72,8 +77,8 @@ export default function page() {
             <div>
               <Email email={"rp901522@gmail.com"} />
             </div>
-            <div>
-              <Mobile phone={"+977-9864315562"} />
+            <div className="flex items-center gap-2 text-sm border-1 border-gray-300 py-2 px-3 rounded-lg text-gray-700 shadow-sm shadow-gray-200 bg-white">
+              📞 +977-9864315562
             </div>
           </div>
         </div>
