@@ -8,7 +8,7 @@ const Review = () => {
     <div id="review" className="flex flex-col w-full">
       {/* Container to center content on large screens */}
       <div className="mx-auto max-w-4xl w-full">
-        <h2 className="px-4 text-2xl font-bold mb-2 text-gray-900">
+        <h2 className="px-4 text-2xl font-bold mb-2 text-gray-900 dark:text-gray-100">
           Peer Review Activities
         </h2>
         {reviews.map((review, index) => {
@@ -17,13 +17,13 @@ const Review = () => {
               id="card"
               key={index}
               // Adjusting padding to be consistent and responsive
-              className="rounded-lg flex flex-col bg-white p-6 my-4 shadow-md hover:shadow-lg transition-all duration-250"
+              className="rounded-lg flex flex-col bg-white dark:bg-slate-800 p-6 my-4 shadow-md hover:shadow-lg transition-all duration-250"
             >
               {/* Review Card Header */}
               <div id="card-header" className="flex items-start gap-4">
                 {/* Icon container with flex-shrink-0 to prevent it from squashing */}
                 <div className="flex-shrink-0">
-                  <LucideEye className="p-2 text-purple-600 rounded-lg bg-purple-100 size-11" />
+                  <LucideEye className="p-2 text-purple-600 dark:text-purple-400 rounded-lg bg-purple-100 dark:bg-purple-900/40 size-11" />
                 </div>
                 {/* Content container, handles title, badges, and description */}
                 <div className="flex flex-col gap-2">
@@ -35,7 +35,7 @@ const Review = () => {
                     <TechnologyBadge tech={review.role} index={index} />
                     <TechnologyBadge tech={review.year} index={index} />
                   </div>
-                  <p className="text-sm text-gray-600 leading-relaxed">
+                  <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
                     {review.description}
                   </p>
                 </div>

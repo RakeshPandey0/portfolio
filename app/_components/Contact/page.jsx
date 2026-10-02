@@ -5,15 +5,15 @@ const page = () => {
   return (
     <section
       id="get-in-touch"
-      className="flex justify-center py-12 px-4 bg-gradient-to-br from-slate-50 to-gray-100"
+      className="flex justify-center py-12 px-4 bg-gradient-to-br from-slate-50 dark:from-slate-900 to-gray-100 dark:to-slate-950"
     >
       <div className="w-full max-w-7xl">
         <div
           id="header"
           className="flex flex-col justify-center items-center text-center mb-12"
         >
-          <h2 className="text-4xl font-bold text-gray-900">Get In Touch</h2>
-          <p className="text-lg text-gray-500 max-w-3xl mx-auto mt-3">
+          <h2 className="text-4xl font-bold text-gray-900 dark:text-gray-100">Get In Touch</h2>
+          <p className="text-lg text-gray-500 dark:text-gray-400 max-w-3xl mx-auto mt-3">
             I&apos;m always interested in new opportunities and collaborations. Let&apos;s
             discuss how we can work together on your next project.
           </p>

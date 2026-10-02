@@ -7,7 +7,7 @@ const page = () => {
     <section
       id="education-expreience"
       // Adjusted padding for better responsiveness
-      className="py-16 px-4 bg-gradient-to-br from-slate-50 to-gray-100"
+      className="py-16 px-4 bg-gradient-to-br from-slate-50 dark:from-slate-900 to-gray-100 dark:to-slate-950"
     >
       {/* Replaced invalid classes with a standard responsive container */}
       <div className="w-full max-w-7xl mx-auto">
@@ -15,10 +15,10 @@ const page = () => {
           id="header"
           className="flex flex-col justify-center items-center text-center mb-12"
         >
-          <h2 className="text-4xl font-bold text-gray-900">
+          <h2 className="text-4xl font-bold text-gray-900 dark:text-gray-100">
             Education & Experience
           </h2>
-          <p className="text-lg text-gray-500 max-w-3xl mx-auto mb-8 mt-3">
+          <p className="text-lg text-gray-500 dark:text-gray-400 max-w-3xl mx-auto mb-8 mt-3">
             My academic journey, achievements, and community involvement that
             shaped my technical expertise.
           </p>

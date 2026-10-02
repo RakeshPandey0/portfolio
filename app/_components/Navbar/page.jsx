@@ -1,10 +1,29 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useSyncExternalStore } from "react";
+import { Sun, Moon } from "lucide-react";
+
+// Theme lives on <html class="dark">; subscribe so the icon stays in sync
+const subscribeTheme = (callback) => {
+  const observer = new MutationObserver(callback);
+  observer.observe(document.documentElement, { attributeFilter: ["class"] });
+  return () => observer.disconnect();
+};
+const getTheme = () => document.documentElement.classList.contains("dark");
+const getServerTheme = () => false;
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const isDark = useSyncExternalStore(subscribeTheme, getTheme, getServerTheme);
+
+  const toggleTheme = () => {
+    const next = !getTheme();
+    document.documentElement.classList.toggle("dark", next);
+    try {
+      localStorage.setItem("theme", next ? "dark" : "light");
+    } catch (e) {}
+  };
 
   const links = [
     { id: "hero", label: "Home" },
@@ -51,6 +70,15 @@ export default function Navbar() {
 
           {/* Right side controls */}
           <div className="flex items-center gap-4">
+            {/* Theme toggle */}
+            <button
+              onClick={toggleTheme}
+              className="text-gray-300 dark:text-gray-700 hover:text-blue-400 dark:hover:text-blue-600 transition-colors"
+              aria-label={isDark ? "Switch to light theme" : "Switch to dark theme"}
+            >
+              {isDark ? <Sun className="size-5" /> : <Moon className="size-5" />}
+            </button>
+
             {/* Mobile menu toggle */}
             <button
               onClick={() => setMobileOpen(!mobileOpen)}

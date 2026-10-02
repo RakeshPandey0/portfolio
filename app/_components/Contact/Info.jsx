@@ -4,31 +4,31 @@ const Info = () => {
   return (
     <div
       id="information"
-      className="flex flex-col justify-start gap-6 p-12 bg-white rounded-xl shadow-md max-w-lg mx-8 md:mx-0"
+      className="flex flex-col justify-start gap-6 p-12 bg-white dark:bg-slate-800 rounded-xl shadow-md max-w-lg mx-8 md:mx-0"
     >
-      <h2 className="text-2xl font-bold text-gray-800">Contact Information</h2>
+      <h2 className="text-2xl font-bold text-gray-800 dark:text-gray-200">Contact Information</h2>
 
       {/* Contact Components */}
       <div className="flex flex-col gap-4">
         {/* Email */}
         <div className="flex flex-row items-center gap-4">
-          <div className="flex justify-center items-center bg-emerald-100 text-green-500 p-3 rounded-lg flex-shrink-0">
+          <div className="flex justify-center items-center bg-emerald-100 dark:bg-emerald-900/40 text-green-500 p-3 rounded-lg flex-shrink-0">
             <Mail size={20} />
           </div>
           <div className="flex flex-col">
-            <p className="text-gray-500">Email</p>
-            <p className="font-semibold text-gray-900">rp901522@gmail.com</p>
+            <p className="text-gray-500 dark:text-gray-400">Email</p>
+            <p className="font-semibold text-gray-900 dark:text-gray-100">rp901522@gmail.com</p>
           </div>
         </div>
 
         {/* Location */}
         <div className="flex flex-row items-center gap-4">
-          <div className="flex justify-center items-center bg-emerald-100 text-green-500 p-3 rounded-lg flex-shrink-0">
+          <div className="flex justify-center items-center bg-emerald-100 dark:bg-emerald-900/40 text-green-500 p-3 rounded-lg flex-shrink-0">
             <MapPin size={20} />
           </div>
           <div className="flex flex-col">
-            <p className="text-gray-500">Location</p>
-            <p className="font-semibold text-gray-900">Kathmandu, Nepal</p>
+            <p className="text-gray-500 dark:text-gray-400">Location</p>
+            <p className="font-semibold text-gray-900 dark:text-gray-100">Kathmandu, Nepal</p>
           </div>
         </div>
       </div>

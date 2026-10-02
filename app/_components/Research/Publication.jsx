@@ -8,7 +8,7 @@ const Publication = () => {
     <div id="publication" className="flex flex-col w-full">
       {/* Container to center content on large screens */}
       <div className="mx-auto max-w-4xl w-full">
-        <h2 className="px-4 text-2xl font-bold mb-2 text-gray-900">
+        <h2 className="px-4 text-2xl font-bold mb-2 text-gray-900 dark:text-gray-100">
           Research Publications
         </h2>
         {publications.map((publication, index) => {
@@ -17,13 +17,13 @@ const Publication = () => {
               id="card"
               key={index}
               // Adjusting padding to be consistent and responsive
-              className="rounded-lg flex flex-col bg-white p-6 my-4 shadow-md hover:shadow-lg transition-all duration-250"
+              className="rounded-lg flex flex-col bg-white dark:bg-slate-800 p-6 my-4 shadow-md hover:shadow-lg transition-all duration-250"
             >
               {/* Publication Card Header */}
               <div id="card-header" className="flex items-start gap-4">
                 {/* Icon container with flex-shrink-0 to prevent it from squashing */}
                 <div className="flex-shrink-0">
-                  <LucideFileText className="p-2 text-emerald-600 rounded-lg bg-emerald-100 size-11" />
+                  <LucideFileText className="p-2 text-emerald-600 dark:text-emerald-400 rounded-lg bg-emerald-100 dark:bg-emerald-900/40 size-11" />
                 </div>
                 {/* Content container, handles title, badges, and description */}
                 <div className="flex flex-col gap-2">
@@ -35,7 +35,7 @@ const Publication = () => {
                     <TechnologyBadge tech={publication.venue} index={index} />
                     <TechnologyBadge tech={publication.type} index={index} />
                   </div>
-                  <p className="text-sm text-gray-600 leading-relaxed">
+                  <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
                     {publication.description}
                   </p>
                   {/* DOI Button - Cleaned up and standardized classes */}
@@ -43,7 +43,7 @@ const Publication = () => {
                     href={publication.doi}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 rounded-md bg-white px-4 py-2 text-sm font-medium leading-normal text-gray-600 border border-gray-300 transition-all duration-150 hover:bg-gray-100 shadow-sm mt-2 w-max"
+                    className="inline-flex items-center gap-2 rounded-md bg-white dark:bg-slate-800 px-4 py-2 text-sm font-medium leading-normal text-gray-600 dark:text-gray-400 border border-gray-300 dark:border-slate-600 transition-all duration-150 hover:bg-gray-100 dark:hover:bg-slate-700 shadow-sm mt-2 w-max"
                   >
                     <ExternalLinkIcon className="size-4" />
                     View DOI

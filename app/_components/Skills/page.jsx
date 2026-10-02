@@ -3,12 +3,12 @@ import TechnologyBadge from "../ui/TechnologyBadge";
 import { technicalSkills } from "@/app/assets/technicalSkills";
 const page = () => {
   return (
-    <section id="technical-skills" className="py-16 px-4 bg-white">
+    <section id="technical-skills" className="py-16 px-4 bg-white dark:bg-slate-950">
       <div className="max-w-6xl mx-auto">
-        <h2 className="flex justify-center text-4xl font-bold text-gray-900 mb-4">
+        <h2 className="flex justify-center text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4">
           Technical Skills
         </h2>
-        <p className="text-center text-lg text-gray-500 max-w-3xl mx-auto mb-8 mt-3">
+        <p className="text-center text-lg text-gray-500 dark:text-gray-400 max-w-3xl mx-auto mb-8 mt-3">
           A comprehensive toolkit spanning full-stack web development, machine
           learning, and modern development practices.
         </p>
@@ -19,10 +19,10 @@ const page = () => {
           return (
             <div
               key={index}
-              className="rounded-lg flex flex-col items-start bg-white p-7 shadow-md hover:shadow-xl transition duration-250"
+              className="rounded-lg flex flex-col items-start bg-white dark:bg-slate-800 p-7 shadow-md hover:shadow-xl transition duration-250"
             >
               <div className="flex items-center gap-4 mb-5">
-                <field.icon className="p-2 text-emerald-600 rounded-lg bg-emerald-100 size-11" />
+                <field.icon className="p-2 text-emerald-600 dark:text-emerald-400 rounded-lg bg-emerald-100 dark:bg-emerald-900/40 size-11" />
                 <h3 className="text-xl font-semibold">{field.title}</h3>
               </div>
 

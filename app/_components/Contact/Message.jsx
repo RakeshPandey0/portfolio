@@ -30,12 +30,12 @@ const Message = () => {
 
   return (
     // Adjusting container padding for better mobile spacing
-    <div className="flex flex-col p-10 sm:p-5 my-4 rounded-xl bg-white shadow-lg max-w-2xl mx-2 md:mx-0">
-      <h2 className="text-xl sm:text-2xl font-bold text-gray-800">Send a Message</h2>
+    <div className="flex flex-col p-10 sm:p-5 my-4 rounded-xl bg-white dark:bg-slate-800 shadow-lg max-w-2xl mx-2 md:mx-0">
+      <h2 className="text-xl sm:text-2xl font-bold text-gray-800 dark:text-gray-200">Send a Message</h2>
       <form
         ref={formRef}
         onSubmit={sendEmail}
-        className="flex flex-col mt-5 text-gray-800 text-base gap-4"
+        className="flex flex-col mt-5 text-gray-800 dark:text-gray-200 text-base gap-4"
       >
         {/* Name and Email Inputs - Now responsive */}
         <div className="flex flex-col sm:flex-row gap-4">
@@ -45,7 +45,7 @@ const Message = () => {
               type="text"
               name="name"
               placeholder="Your name"
-              className="border border-gray-300 p-2 rounded-md mt-1 w-full focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none"
+              className="border border-gray-300 dark:border-slate-600 p-2 rounded-md mt-1 w-full focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none dark:bg-slate-900 dark:text-gray-100 dark:placeholder-gray-500"
               required
             />
           </div>
@@ -55,7 +55,7 @@ const Message = () => {
               type="email"
               name="email"
               placeholder="your.email@example.com"
-              className="border border-gray-300 p-2 rounded-md mt-1 w-full focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none"
+              className="border border-gray-300 dark:border-slate-600 p-2 rounded-md mt-1 w-full focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none dark:bg-slate-900 dark:text-gray-100 dark:placeholder-gray-500"
               required
             />
           </div>
@@ -68,7 +68,7 @@ const Message = () => {
             type="text"
             name="subject"
             placeholder="What's the subject about?"
-            className="border border-gray-300 p-2 rounded-md mt-1 w-full focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none"
+            className="border border-gray-300 dark:border-slate-600 p-2 rounded-md mt-1 w-full focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none dark:bg-slate-900 dark:text-gray-100 dark:placeholder-gray-500"
             required
           />
         </div>
@@ -80,7 +80,7 @@ const Message = () => {
             name="message"
             rows={6}
             placeholder="Tell me about the project or opportunity...."
-            className="border border-gray-300 p-2 rounded-md mt-1 w-full focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none"
+            className="border border-gray-300 dark:border-slate-600 p-2 rounded-md mt-1 w-full focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none dark:bg-slate-900 dark:text-gray-100 dark:placeholder-gray-500"
             required
           />
         </div>

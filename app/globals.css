@@ -12,11 +12,13 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #ffffff;
-    --foreground: #000000;
-  }
+/* Class-based dark mode, toggled from the Navbar */
+@custom-variant dark (&:where(.dark, .dark *));
+
+.dark {
+  --background: #020617;
+  --foreground: #f3f4f6;
+  color-scheme: dark;
 }
 
 body {

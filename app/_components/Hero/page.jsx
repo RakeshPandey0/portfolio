@@ -10,7 +10,7 @@ import profileImage from "@/public/profile-image.png";
 
 export default function page() {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 to-gray-100 px-4">
+    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 dark:from-slate-900 to-gray-100 dark:to-slate-950 px-4">
       <div className="flex flex-col lg:flex-row items-center justify-center gap-12 max-w-6xl mx-auto lg:text-left">
         <motion.div
           className="flex-shrink-0 relative rounded-full overflow-hidden"
@@ -30,13 +30,13 @@ export default function page() {
         </motion.div>
 
         <div className="text-center lg:text-left max-w-2xl">
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900">
+          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-gray-100">
             Rakesh Pandey
           </h1>
-          <h2 className="text-2xl text-gray-600 mt-2 p-2">
+          <h2 className="text-2xl text-gray-600 dark:text-gray-400 mt-2 p-2">
             Full-Stack Developer
           </h2>
-          <p className="text-lg text-gray-500 mb-8 mt-3">
+          <p className="text-lg text-gray-500 dark:text-gray-400 mb-8 mt-3">
             Computer Engineering graduate building full-stack web applications
             and digital health solutions, from health information systems to
             social protection platforms. Experienced with the MERN stack,
@@ -51,7 +51,7 @@ export default function page() {
             </a>
             <a
               href="#project"
-              className="inline-block rounded-lg bg-white px-4 py-2 text-sm font-medium uppercase leading-normal text-gray-600 border border-gray-300 transition duration-150 ease-in-out hover:bg-gray-100 shadow-sm"
+              className="inline-block rounded-lg bg-white dark:bg-slate-800 px-4 py-2 text-sm font-medium uppercase leading-normal text-gray-600 dark:text-gray-400 border border-gray-300 dark:border-slate-600 transition duration-150 ease-in-out hover:bg-gray-100 dark:hover:bg-slate-700 shadow-sm"
             >
               View Projects
             </a>
@@ -60,7 +60,7 @@ export default function page() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
-              className="inline-block rounded-lg bg-white px-3 py-2 text-xs font-medium uppercase leading-normal text-gray-600 border border-gray-300 transition duration-150 ease-in-out hover:bg-gray-100 shadow-sm"
+              className="inline-block rounded-lg bg-white dark:bg-slate-800 px-3 py-2 text-xs font-medium uppercase leading-normal text-gray-600 dark:text-gray-400 border border-gray-300 dark:border-slate-600 transition duration-150 ease-in-out hover:bg-gray-100 dark:hover:bg-slate-700 shadow-sm"
             >
               <GitIcon />
             </a>
@@ -69,7 +69,7 @@ export default function page() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
-              className="inline-block rounded-lg bg-white px-3 py-2 text-xs font-medium uppercase leading-normal text-gray-600 border border-gray-300 transition duration-150 ease-in-out hover:bg-gray-100 shadow-sm"
+              className="inline-block rounded-lg bg-white dark:bg-slate-800 px-3 py-2 text-xs font-medium uppercase leading-normal text-gray-600 dark:text-gray-400 border border-gray-300 dark:border-slate-600 transition duration-150 ease-in-out hover:bg-gray-100 dark:hover:bg-slate-700 shadow-sm"
             >
               <LinkedinIcon />
             </a>
