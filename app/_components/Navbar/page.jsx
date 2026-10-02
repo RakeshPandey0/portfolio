@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -13,6 +13,8 @@ export default function Navbar() {
     { id: "skills", label: "Skills" },
     { id: "education", label: "Education" },
     { id: "research", label: "Research" },
+    { id: "events", label: "Events" },
+    { id: "certifications", label: "Certifications" },
     { id: "contact", label: "Contact" },
   ];
 
@@ -69,16 +71,9 @@ export default function Navbar() {
                   <Link
                     href={`#${link.id}`}
                     onClick={() => setMobileOpen(false)}
-                    className={`block pb-1 text-lg transition-all duration-300 ${
-                      active === link.id
-                        ? "text-blue-400 font-semibold"
-                        : "text-gray-300 dark:text-gray-700 hover:text-blue-300 dark:hover:text-blue-600"
-                    }`}
+                    className="block pb-1 text-lg transition-all duration-300 text-gray-300 dark:text-gray-700 hover:text-blue-300 dark:hover:text-blue-600"
                   >
                     {link.label}
-                    {active === link.id && (
-                      <span className="block h-[2px] w-full bg-blue-400 dark:bg-blue-600 rounded-full mt-1"></span>
-                    )}
                   </Link>
                 </li>
               ))}
