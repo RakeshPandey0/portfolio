@@ -24,7 +24,9 @@ export const technicalSkills = [
       "REST APIs",
       "JWT Authentication",
       "Tailwind CSS",
+      "Bootstrap",
       "Redux",
+      "Firebase",
     ],
   },
   {
@@ -40,12 +42,13 @@ export const technicalSkills = [
       "Seaborn",
       "Neural Networks",
       "Genetic Algorithms",
+      "OpenCV",
     ],
   },
   {
     icon: Database,
     title: "Databases",
-    skills: ["MongoDB", "MySQL", "Mongoose"],
+    skills: ["MongoDB", "MySQL", "SQLite", "SQL", "Mongoose"],
   },
   {
     icon: Wrench,
@@ -58,6 +61,7 @@ export const technicalSkills = [
       "Jupyter Notebook",
       "Google Colab",
       "Postman",
+      "Linux",
     ],
   },
   {

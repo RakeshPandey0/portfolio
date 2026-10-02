@@ -11,7 +11,7 @@ export const highlights = [
       icon: Code,
       title: "Development",
       description:
-        "Full-stack web development with modern technologies like Next.js, React, and Node.js",
+        "Full-stack web and digital health systems built with Next.js, React, and Node.js",
     },
     {
       icon: Brain,

@@ -37,9 +37,10 @@ export default function page() {
             Full-Stack Developer
           </h2>
           <p className="text-lg text-gray-500 mb-8 mt-3">
-            Computer Engineering graduate with expertise in MERN stack, Next.js,
-            and deep learning. Passionate about building innovative solutions
-            that solve real-world problems.
+            Computer Engineering graduate building full-stack web applications
+            and digital health solutions, from health information systems to
+            social protection platforms. Experienced with the MERN stack,
+            Next.js, and deep learning.
           </p>
           <div className="flex flex-wrap justify-center lg:justify-start gap-4 m-1 p-2">
             <a
@@ -76,9 +77,6 @@ export default function page() {
           <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-5 m-2 p-1">
             <div>
               <Email email={"rp901522@gmail.com"} />
-            </div>
-            <div className="flex items-center gap-2 text-sm border-1 border-gray-300 py-2 px-3 rounded-lg text-gray-700 shadow-sm shadow-gray-200 bg-white">
-              📞 +977-9864315562
             </div>
           </div>
         </div>

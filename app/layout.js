@@ -14,8 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Rakesh Pandey",
-  description: "Rakesh Pandey",
+  title: "Rakesh Pandey | Full-Stack Developer",
+  description:
+    "Portfolio of Rakesh Pandey, a Computer Engineer and full-stack developer from Kathmandu, Nepal, working on web applications, digital health, and machine learning.",
 };
 
 export default function RootLayout({ children }) {

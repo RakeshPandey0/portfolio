@@ -1,5 +1,5 @@
 import React from "react";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 const Info = () => {
   return (
     <div
@@ -18,17 +18,6 @@ const Info = () => {
           <div className="flex flex-col">
             <p className="text-gray-500">Email</p>
             <p className="font-semibold text-gray-900">rp901522@gmail.com</p>
-          </div>
-        </div>
-
-        {/* Phone */}
-        <div className="flex flex-row items-center gap-4">
-          <div className="flex justify-center items-center bg-emerald-100 text-green-500 p-3 rounded-lg flex-shrink-0">
-            <Phone size={20} />
-          </div>
-          <div className="flex flex-col">
-            <p className="text-gray-500">Phone</p>
-            <p className="font-semibold text-gray-900">+977-9864315562</p>
           </div>
         </div>
 

@@ -7,7 +7,7 @@ import { projects } from "@/app/assets/projects";
 const page = () => {
   return (
     <section
-      id="project"
+      id="project-list"
       // Adjusted padding for better responsiveness
       className="py-16 px-4 bg-gradient-to-br from-slate-50 to-gray-100"
     >
@@ -89,16 +89,18 @@ const page = () => {
                     <GitIcon className="size-4" />
                     Code
                   </a>
-                  {/* Demo Button - Cleaned up classes */}
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 rounded-md bg-white px-4 py-2 text-sm font-medium leading-normal text-gray-600 border border-gray-300 transition-all duration-150 hover:bg-gray-100 shadow-sm"
-                  >
-                    <Link2Icon className="size-4" />
-                    Demo
-                  </a>
+                  {/* Demo Button - only for projects with a live demo */}
+                  {project.demo && (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 rounded-md bg-white px-4 py-2 text-sm font-medium leading-normal text-gray-600 border border-gray-300 transition-all duration-150 hover:bg-gray-100 shadow-sm"
+                    >
+                      <Link2Icon className="size-4" />
+                      Demo
+                    </a>
+                  )}
                 </div>
               </div>
             );
