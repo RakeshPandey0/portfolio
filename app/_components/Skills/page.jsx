@@ -3,7 +3,7 @@ import TechnologyBadge from "../ui/TechnologyBadge";
 import { technicalSkills } from "@/app/assets/technicalSkills";
 const page = () => {
   return (
-    <section id="about" className="py-16 px-4 bg-white">
+    <section id="technical-skills" className="py-16 px-4 bg-white">
       <div className="max-w-6xl mx-auto">
         <h2 className="flex justify-center text-4xl font-bold text-gray-900 mb-4">
           Technical Skills

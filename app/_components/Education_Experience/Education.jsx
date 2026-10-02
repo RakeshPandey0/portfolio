@@ -3,7 +3,7 @@ import { education } from "@/app/assets/education";
 
 const Education = () => {
   return (
-    <div id="education" className="flex flex-col p-4">
+    <div id="education-list" className="flex flex-col p-4">
       {/* Container to center content on large screens */}
       <div className="mx-auto max-w-4xl w-full">
         <h2 className="text-2xl font-bold mb-2 text-gray-900">Education</h2>

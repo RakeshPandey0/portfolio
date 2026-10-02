@@ -3,7 +3,7 @@ import { achievements } from "@/app/assets/achievements";
 
 const Achievement = () => {
   return (
-    <div id="education" className="flex flex-col p-4">
+    <div id="achievements" className="flex flex-col p-4">
       {/* Container to center content on large screens */}
       <div className="mx-auto max-w-4xl w-full">
         <h2 className="text-2xl font-bold mb-2 text-gray-900">Achievements</h2>

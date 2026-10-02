@@ -6,12 +6,10 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint ."
   },
   "dependencies": {
-    "@emailjs/browser": "^4.4.1",
     "@vercel/analytics": "^1.5.0",
-    "emailjs": "^4.0.3",
     "emailjs-com": "^3.2.0",
     "framer-motion": "^12.23.12",
     "lucide-react": "^0.526.0",
